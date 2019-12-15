@@ -1,0 +1,206 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4190533800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on TekSchool page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_TekSchool_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1197835500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Click on Test Environment link",
+            "match": {
+              "location": "LoginStepDefinitions.user_Click_on_Test_Environment_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9653700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should see Test Environment page",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_see_Test_Environment_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10487461600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initializer.beforeHooks()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "SDET2019AUG_SDET_Register_Form_Test",
+        "description": "",
+        "id": "tek-school-scenarios;sdet2019aug-sdet-register-form-test",
+        "after": [
+          {
+            "result": {
+              "duration": 762242300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initializer.afterHooks()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 893361900,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User click on myAccount menu on top of the page",
+            "match": {
+              "location": "TekSchoolScenariosStepDefinitions.user_click_on_myAccount_menu_on_top_of_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 968500300,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User click on register on myAccount menu",
+            "match": {
+              "location": "TekSchoolScenariosStepDefinitions.user_click_on_register_on_myAccount_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 33,
+            "name": "User fill registeration form with bellow information",
+            "match": {},
+            "rows": [
+              {
+                "comments": [
+                  {
+                    "line": 34,
+                    "value": "#firstname|lastname|email|phone|password|"
+                  }
+                ],
+                "cells": [
+                  "Mashooq",
+                  "Dowlati",
+                  "mashooq.dowlati@gmail.com",
+                  "2022941415",
+                  "Keepitsafe@123"
+                ],
+                "line": 35
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "User click on \u0027no\u0027 radio button for subscribe",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "User click on continue button",
+            "match": {
+              "location": "TekSchoolScenariosStepDefinitions.user_click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "User should see \u0027Your Account Has Been Created!\u0027",
+            "match": {
+              "location": "TekSchoolScenariosStepDefinitions.user_should_see_Your_Account_Has_Been_Created()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "User connects to DataBase",
+            "match": {
+              "location": "TekSchoolScenariosStepDefinitions.user_connects_to_DataBase()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 40,
+            "name": "User sends query \u0027select * from public.customer where email\u003d\u0027mashooq.dowlati@gmail.com\u0027",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 41,
+            "name": "User verify account is created with email \u0027mashooq.dowlati@gmail.com\u0027",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 29,
+            "name": "@SDET_RF_DBV"
+          }
+        ]
+      }
+    ],
+    "name": "Tek School Scenarios",
+    "description": "",
+    "id": "tek-school-scenarios",
+    "keyword": "Feature",
+    "uri": "Features/TekSchoolScenarios.feature"
+  }
+]
